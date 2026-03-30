@@ -6,25 +6,49 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const LOJAS = [...];
-        const TOP10 = [...];
-        const ALERTAS = [...];
-        const IZI_DIA = [...];
-        const IZI_MES = [...];
-        const IZI_N2 = [...];
-        const IZI_N3 = [...];
-        const IZI_HIST = [...];
-        const IZI_SEM = [...];
-        const SCAN_TOP15 = [...];
-        const SCAN_OPP = [...];
-        const FABS = [...];
-        // All other JavaScript functionality remains here
-    </script>
 </head>
 <body>
     <div id="dashboard">
-        <!-- Dashboard Content Goes Here -->
+        <h1>Dashboard</h1>
+        <div id="estoque"><h2>Estoque</h2></div>
+        <div id="vendas"><h2>Vendas</h2></div>
+        <div id="posicionamento"><h2>Posicionamento</h2></div>
+        <input type="file" id="fileUpload" />
     </div>
+    <script>
+        const LOJAS = []; // Complete data arrays
+        const TOP10 = [];
+        const ALERTAS = [];
+        const IZI_DIA = [];
+        const IZI_MES = [];
+        const IZI_N2 = [];
+        const IZI_N3 = [];
+        const IZI_HIST = [];
+        const IZI_SEM = [];
+        const SCAN_TOP15 = [];
+
+        function renderEstoque() {
+            // Implement Estoque chart
+        }
+        function renderVendas() {
+            // Implement Vendas chart
+        }
+        function renderPosicionamento() {
+            // Implement Posicionamento chart
+        }
+
+        document.getElementById('fileUpload').addEventListener('change', handleFileUpload);
+
+        function handleFileUpload(event) {
+            // Handle file upload logic
+        }
+
+        // Call render functions on load
+        window.onload = function() {
+            renderEstoque();
+            renderVendas();
+            renderPosicionamento();
+        };
+    </script>
 </body>
 </html>
